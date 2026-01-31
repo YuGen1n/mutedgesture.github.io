@@ -1,0 +1,413 @@
+@media (min-width: 768px) and (max-width: 1223px) {
+
+    /* header */
+    header {
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .header-navigate {
+        position: absolute;
+        right: -590px;
+        width: 440px;
+        height: 720px;
+        margin-top: -100px;
+        background: white;
+        transform: rotate(-20deg);
+        transition: .3s;
+    }
+
+    .header-navigate ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 720px;
+        font-size: 1.4em;
+        font-family: 'DrukWideCyr-Bold';
+        padding-left: 10px;
+        transform: rotate(20deg);
+    }
+
+    .header-navigate ul li a {
+        margin: 0px;
+        height: 100px;
+        width: 200px;
+        color: rgb(56, 56, 56);
+    }
+
+    .header-navigate.header-navigate-on {
+        right: -110px;
+    }
+
+    .header-navigate li {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.4s ease;
+        margin-bottom: 20px;
+    }
+
+    .header-navigate.header-navigate-on li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .header-navigate li:nth-child(1) {
+        margin-left: -250px;
+    }
+
+    .header-navigate li:nth-child(2) {
+        margin-left: -140px;
+    }
+
+    .header-navigate li:nth-child(3) {
+        margin-left: -30px;
+    }
+
+    .header-navigate.header-navigate-on li:nth-child(1) {
+        transition-delay: 0.2s;
+    }
+
+    .header-navigate.header-navigate-on li:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+
+    .header-navigate.header-navigate-on li:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+
+    .header-navigate a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        padding: 15px;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .header-navigate a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .header-logo {
+        background: url(../../img/logo3.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 12px;
+    }
+
+    .header-button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 160px;
+        height: 65px;
+        cursor: pointer;
+    }
+
+    .random-container {
+        display: none;
+    }
+
+    .header-button i {
+        position: absolute;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        opacity: 1;
+    }
+
+    .header-button.active .fa-bars {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+
+    .header-button.active .fa-xmark {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    .header-button .fa-xmark {
+        opacity: 1;
+        transform: rotate(-90deg);
+    }
+
+    .header-shop {
+        width: 160px;
+    }
+
+    /* header-banner */
+    .header-banner {
+        height: 700px;
+        background: url(../../img/planshet-back.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .jeans,
+    .header-text,
+    .stickers,
+    .arrow,
+    .arrows {
+        display: none;
+    }
+
+    /* katalog */
+    .katalog-container div {
+        height: 450px;
+        width: 250px;
+        font-size: .8em;
+    }
+
+    .katalog-container div p a {
+        padding: 10px 25px;
+    }
+
+    /* sliders */
+    .slider-h1,
+    .sliders-container {
+        max-width: 870px;
+        justify-content: center;
+    }
+
+    .product-slider:nth-child(5) {
+        display: none;
+    }
+
+    .product-slider:nth-child(6) {
+        display: none;
+    }
+
+    .exclusive-banner {
+        margin: 50px auto;
+        width: 2270px;
+    }
+
+    .exclusive-banner1 {
+        margin: 50px auto;
+        width: 870px;
+    }
+
+    .exclusive-content {
+        width: 870px;
+        height: 500px;
+    }
+
+    .exclusive-slider {
+        align-items: center;
+        gap: 10px;
+        max-width: 870px;
+    }
+
+    /* страница товара */
+    #productDetailPage {
+        justify-content: center;
+        font-size: 1.7em;
+        font-family: "Montserrat", sans-serif;
+        scale: .9;
+    }
+
+    .footer-zagolovok {
+        width: 400px;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+@media (min-width: 10px) and (max-width: 768px) {
+
+    /* header */
+    header {
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .header-banner {
+        display: none;
+    }
+
+    .header-navigate {
+        position: absolute;
+        right: -590px;
+        width: 440px;
+        height: 720px;
+        margin-top: -100px;
+        background: white;
+        transform: rotate(-20deg);
+        transition: .3s;
+    }
+    .header-navigate ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 720px;
+        font-size: 1.4em;
+        font-family: 'DrukWideCyr-Bold';
+        padding-left: 10px;
+        transform: rotate(20deg);
+    }
+
+    .header-navigate ul li a {
+        margin: 0px;
+        height: 100px;
+        width: 200px;
+        color: rgb(56, 56, 56);
+    }
+
+    .header-navigate.header-navigate-on {
+        right: -110px;
+    }
+
+    .header-navigate li {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.4s ease;
+        margin-bottom: 20px;
+    }
+
+    .header-navigate.header-navigate-on li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .header-navigate li:nth-child(1) {
+        margin-left: -250px;
+    }
+
+    .header-navigate li:nth-child(2) {
+        margin-left: -140px;
+    }
+
+    .header-navigate li:nth-child(3) {
+        margin-left: -30px;
+    }
+
+    .header-navigate.header-navigate-on li:nth-child(1) {
+        transition-delay: 0.2s;
+    }
+
+    .header-navigate.header-navigate-on li:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+
+    .header-navigate.header-navigate-on li:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+
+    .header-navigate a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        padding: 15px;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .header-navigate a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .header-logo {
+        background: url(../../img/logo3.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 12px;
+    }
+
+    .header-button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 160px;
+        height: 65px;
+        cursor: pointer;
+    }
+
+    .header-button i {
+        position: absolute;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        opacity: 1;
+    }
+
+    .header-button.active .fa-bars {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+
+    .header-button.active .fa-xmark {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    .header-button .fa-xmark {
+        opacity: 1;
+        transform: rotate(-90deg);
+    }
+
+    .header-shop {
+        width: 160px;
+    }
+
+    /* katalog */
+    .katalog-container div {
+        height: 450px;
+        width: 250px;
+        font-size: .8em;
+    }
+
+    .katalog-container div p a {
+        padding: 10px 25px;
+    }
+
+    /* sliders */
+    .slider-h1,
+    .sliders-container {
+        max-width: 570px;
+        justify-content: center;
+    }
+
+    .slider-h1 {
+        text-align: center;
+    }
+
+    .product-slider:nth-child(5) {
+        display: none;
+    }
+
+    .product-slider:nth-child(6) {
+        display: none;
+    }
+
+    .exclusive-content {
+        width: 570px;
+        height: 900px;
+    }
+
+    .exclusive-h1 h1 {
+        text-align: center;
+    }
+
+    .exclusive-banner,
+    .exclusive-banner1 {
+        margin: 40px auto;
+    }
+
+    /* footer */
+    .footer-h1 {
+        display: none;
+    }
+
+    /* страница товара */
+    #productDetailPage {
+        justify-content: center;
+        font-size: 1.7em;
+        font-family: "Montserrat", sans-serif;
+        scale: .9;
+    }
+}

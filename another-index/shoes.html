@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muted Gesture</title>
+    <link rel="icon" href="../img/logo3.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://kit.fontawesome.com/ffffc5db57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-----------------------------------------------------------Header -------------------------------------------------------------->
+        <header class="animate-top">
+            <div class="header-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header-navigate" id="headerNavigate">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#collection">Коллекции</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
+            </div>
+            <a href="../index.html">
+                <div class="header-logo"></div>
+            </a>
+            <div class="header-shop">
+                <ul>
+                    <li><a onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a onclick="openFavorites()"><i class="fa-solid fa-heart"></i></a></li>
+                </ul>
+            </div>
+        </header>
+<div class="container">
+<!-----------------------------------------------------------Header banner ------------------------------------------------------->
+        <div class="header-banner">
+            <div class="header-text animate-left">
+                <h1>КАТЕГОРИЯ: ХУДИ</h1>
+            </div>
+            <div class="jeans animate-right">
+                <a href="../another-index/pants.html"><div class="jeans-block1"></div></a>
+                <a href="../another-index/hoodies.html"><div class="jeans-block2"></div></a>
+                <a href="../another-index/shoes.html"><div class="jeans-block3"></div></a>
+                <a href="../another-index/tshirts.html"><div class="jeans-block4"></div></a>
+            </div>
+            <div class="stickers animate-right"></div>
+            <div class="arrows animate-top"></div>
+            <div class="arrow animate-bottom"></div>
+        </div>
+<!-----------------------------------------------------------Katalog ------------------------------------------------------------->
+         <div class="katalog-container animate-bottom">
+            <div class="katalog-block1">
+                <h1><a href="../another-index/tshirts.html">T-SHIRTS</a></h1>
+                <p><a href="../another-index/tshirts.html">SHOP</a></p>
+            </div>
+            <div class="katalog-block2">
+                <h1><a href="#">HOODIES</a></h1>
+                <p><a href="#">SHOP</a></p>
+            </div>
+            <div class="katalog-block3">
+                <h1><a href="../another-index/pants.html">PANTS</a></h1>
+                <p><a href="../another-index/pants.html">SHOP</a></p>
+            </div>
+            <div class="katalog-block4">
+                <h1><a href="../another-index/shoes.html">SHOES</a></h1>
+                <p><a href="../another-index/shoes.html">SHOP</a></p>
+            </div>
+        </div>
+
+<!---------------------------------------------------------- new-production ---------------------------------------------------------->
+<div class="slider-h1 animate-left">
+    <h1>НОВАЯ ПРОДУКЦИЯ</h1>
+</div>
+<div class="sliders-container animate-right"> 
+    <!-- Первый слайдер -->
+    <div class="product-slider none-block" data-img="img/new-collection-1.png" data-title="BALENCIAGA T-SHIRT" data-price="450$" id="slider1">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/1.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/2.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/3.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button class="btn btn-like">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Второй слайдер -->
+    <div class="product-slider none-block" data-img="../img/shoes/4.jpg" data-title="BALENCIAGA HOODIE" data-price="650$" id="slider2">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/4.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/5.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/6.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA HOODIE</div>
+            <div class="price">650$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Третий слайдер -->
+    <div class="product-slider none-block" data-img="../img/shoes/7.jpg" data-title="BALENCIAGA PANTS" data-price="550$" id="slider3">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/7.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/8.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/9.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA PANTS</div>
+            <div class="price">550$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Четвертый слайдер -->
+    <div class="product-slider" data-img="../img/shoes/10.jpg" data-title="BALENCIAGA SHOES" data-price="850$" id="slider4">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/10.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/11.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/12.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA SHOES</div>
+            <div class="price">850$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Пятый слайдер -->
+    <div class="product-slider" data-img="../img/shoes/14.jpg" data-title="BALENCIAGA JACKET" data-price="950$" id="slider5">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/14.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/15.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/16.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA JACKET</div>
+            <div class="price">950$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+
+<div class="slider-h1 animate-left">
+    <h1>ВСЕГДА ПОПУЛЯРНО</h1>
+</div>
+<div class="sliders-container animate-right"> 
+    <!-- Первый слайдер -->
+    <div class="product-slider none-block" data-img="img/new-collection-1.png" data-title="BALENCIAGA T-SHIRT" data-price="450$" id="slider1">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/1.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/2.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/3.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button class="btn btn-like">
+                <i class="far fa-heart"></i>
+            </button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Второй слайдер -->
+    <div class="product-slider none-block" data-img="../img/shoes/4.jpg" data-title="BALENCIAGA HOODIE" data-price="650$" id="slider2">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/4.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/5.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/6.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA HOODIE</div>
+            <div class="price">650$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Третий слайдер -->
+    <div class="product-slider none-block" data-img="../img/shoes/7.jpg" data-title="BALENCIAGA PANTS" data-price="550$" id="slider3">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/7.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/8.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/9.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA PANTS</div>
+            <div class="price">550$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Четвертый слайдер -->
+    <div class="product-slider" data-img="../img/shoes/10.jpg" data-title="BALENCIAGA SHOES" data-price="850$" id="slider4">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/10.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/11.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/12.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA SHOES</div>
+            <div class="price">850$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- Пятый слайдер -->
+    <div class="product-slider" data-img="../img/shoes/14.jpg" data-title="BALENCIAGA JACKET" data-price="950$" id="slider5">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/14.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/15.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/16.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA JACKET</div>
+            <div class="price">950$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------- exclusive ---------------------------------------------------------->
+<div class="exclusive" data-section="exclusive">
+    <div class="exclusive-banner animate-top">
+    </div>
+    <div class="exclusive-content">
+        <div class="exclusive-h1 animate-right">
+            <h1>ЭКСКЛЮЗИВ</h1>
+        </div>
+        <div class="exclusive-slider animate-bottom">
+            <div class="product-slider" data-img="../img/shoes/1.jpg" data-title="BALENCIAGA T-SHIRT EXCLUSIVE 1" data-price="450$" id="slider11">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/1.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/2.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/3.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/14.jpg" data-title="BALENCIAGA T-SHIRT EXCLUSIVE 2" data-price="450$" id="slider12">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/14.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/15.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/16.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/1.jpg" data-title="BALENCIAGA T-SHIRT EXCLUSIVE 3" data-price="450$" id="slider13">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/1.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/2.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/3.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/4.jpg" data-title="BALENCIAGA T-SHIRT EXCLUSIVE 4" data-price="450$" id="slider14">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/4.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/5.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/6.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/7.jpg" data-title="BALENCIAGA T-SHIRT EXCLUSIVE 5" data-price="450$" id="slider15">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/7.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/8.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/9.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/10.jpg" data-title="BALENCIAGA T-SHIRT EXCLUSIVE 6" data-price="450$" id="slider16">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/10.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/11.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/12.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="action">
+<div class="action-container">
+    <div class="exclusive-content">
+        <div class="exclusive-h1 animate-left">
+            <h1>АКЦИИ</h1>
+        </div>
+    <div class="exclusive-slider animate-right">
+            <div class="product-slider" data-img="../img/shoes/20.jpg" data-title="BALENCIAGA T-SHIRT ACTION 1" data-price="450$" id="slider17">
+                
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/20.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/21.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/22.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/14.jpg" data-title="BALENCIAGA T-SHIRT ACTION 2" data-price="450$" id="slider18">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/14.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/15.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/16.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/1.jpg" data-title="BALENCIAGA T-SHIRT ACTION 3" data-price="450$" id="slider19">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/1.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/2.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/3.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/4.jpg" data-title="BALENCIAGA T-SHIRT ACTION 4" data-price="450$" id="slider20">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/4.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/5.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/6.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/7.jpg" data-title="BALENCIAGA T-SHIRT ACTION 5" data-price="450$" id="slider21">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/7.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/8.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/9.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="product-slider" data-img="../img/shoes/10.jpg" data-title="BALENCIAGA T-SHIRT ACTION 6" data-price="450$" id="slider22">
+        <div class="slider-container">
+            <!-- Слайд 1 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/10.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/11.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+            
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-img"><img src="../img/shoes/12.jpg" alt="" class="zoomable-image"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигационные точки -->
+        <div class="slider-nav">
+            <div class="nav-dot active" data-index="0"></div>
+            <div class="nav-dot" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+        
+        <!-- Название и цена -->
+        <div class="slide-name">
+            <div class="brand">BALENCIAGA T-SHIRT</div>
+            <div class="price">450$</div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="buttons">
+            <button class="btn btn-buy" onclick="showProductFromBlock(this)">Купить</button>
+            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i></button>
+            <button class="btn btn-like"><i class="far fa-heart"></i></button>
+        </div>
+        
+        <!-- Стрелки навигации -->
+        <div class="slider-arrow arrow-left">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow arrow-right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="exclusive-banner1 animate-bottom">
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Страница деталей товара -->
+<div id="productDetailPage">
+    <button class="back-button" onclick="goBackToSlider()">Назад</button>
+    
+    <div class="product-detail-container">
+        <!-- Левая часть - ФОТОГРАФИИ -->
+        <div class="product-image-container">
+            <!-- Большое основное фото -->
+            <div class="main-image-container">
+                <img id="detailProductMainImg" src="" alt="" class="product-main-image">
+            </div>
+            
+            <!-- Маленькие фото (3 штуки) -->
+            <div class="small-images-container">
+                <div class="small-image-item" onclick="changeMainImage(this)">
+                    <img id="detailProductImg1" src="" alt="" class="product-small-image">
+                </div>
+                <div class="small-image-item" onclick="changeMainImage(this)">
+                    <img id="detailProductImg2" src="" alt="" class="product-small-image">
+                </div>
+                <div class="small-image-item" onclick="changeMainImage(this)">
+                    <img id="detailProductImg3" src="" alt="" class="product-small-image">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Правая часть - информация -->
+        <div class="product-info-container">
+            <h1 id="detailProductTitle" class="product-title"></h1>
+            <h2 id="detailProductPrice" class="product-price"></h2>
+            
+            <div class="product-info-content">
+                <h3 class="size-title">Описание</h3>
+                <p class="product-description">Качественный товар от Balenciaga.</p>
+                
+                <h3 class="size-title">Размеры</h3>
+                <div class="size-buttons">
+                    <button class="size-btn">XS</button>
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                
+                <button onclick="addToCartFromDetail()" class="add-to-cart-btn">
+                    Добавить в корзину
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Корзина (выдвижная панель справа) -->
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3>Корзина</h3>
+        <button class="close-cart" onclick="closeCart()">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <!-- Товары будут добавляться динамически -->
+        <div class="empty-cart">Корзина пуста</div>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Итого:</span>
+            <span id="cartTotalPrice">0$</span>
+        </div>
+        <button class="btn-checkout">Оформить заказ</button>
+    </div>
+</div>
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+<!-- Избранное (выдвижная панель справа) -->
+<div class="wishlist-sidebar" id="wishlistSidebar">
+    <div class="wishlist-header">
+        <h3>Избранное</h3>
+        <button class="close-wishlist" onclick="closeWishlist()">×</button>
+    </div>
+    <div class="wishlist-items" id="wishlistItems">
+        <!-- Товары будут добавляться динамически -->
+        <div class="empty-wishlist">Нет избранных товаров</div>
+    </div>
+</div>
+<div class="wishlist-overlay" id="wishlistOverlay" onclick="closeWishlist()"></div>
+<!------------------------------------------------------- футер - ------------------------------------------------------->
+<footer>
+    <div class="footer-h1">
+        <div class="footer-zagolovok">
+            <div class="omg">
+                <h1>НАШ МАГАЗИН</h1>
+                <h1>ЭТО ТИХАЯ ГАЛЕРЕЯ</h1>
+            </div>
+            <div class="line"></div>
+        </div>
+        
+        <p>Для тех, кто ищет не просто вещь, а высказывание. Консультанты, влюбленные в свое дело, помогут составить образ, который подчеркнет вашу индивидуальность, а не заменит ее. </p>
+    </div>
+    <div class="footer-nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Коллекции</a></li>
+            <li><a href="#">О нас</a></li>
+        </ul>
+    </div>
+    <div class="footer-input">
+        <p>Email</p>
+        <input type="email" placeholder="Введите...">
+        <a href="#">Получить больше информации</a>
+    </div>
+</footer>
+
+<!-- java script -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>
