@@ -1114,7 +1114,10 @@ footer .footer-h1 p{
     cursor: pointer;
     font-size: 16px;
 }
-
+.size-btn:hover {
+    background: #000;
+    color: white;
+}
 .add-to-cart-btn {
     padding: 15px 40px;
     background: #000;
@@ -1553,3 +1556,4 @@ font-family: 'DrukWideCyr-Bold'; */
     margin-left: 20px;
     margin-top: 20px;
 }
+
