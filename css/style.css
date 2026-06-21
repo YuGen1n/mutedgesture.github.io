@@ -476,7 +476,7 @@ header{
     cursor: pointer;
     z-index: 10;
     transition: all 0.3s ease;
-    color: white;
+    color: rgb(46, 46, 46);
 }
 .arrow-left {
     left: 20px;
@@ -503,7 +503,7 @@ header{
     padding-left: 150px;
 }
 .random-container p{
-    margin-top: -10px;
+    margin-top: 0px;
 }
 .random-block{
     background: url(../img/list.png);
