@@ -566,7 +566,7 @@ header {
     cursor: pointer;
     z-index: 10;
     transition: all 0.3s ease;
-    color: white;
+    color: rgb(51, 51, 51);
 }
 
 .arrow-left {
